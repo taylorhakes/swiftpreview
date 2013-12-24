@@ -1,0 +1,52 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.popover {
+    width: 150px;
+}
+
+.social-btns {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.facebook-iframe {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -10px;
+    height: 62px;
+    border: none;
+    overflow: hidden;
+    width: 300px;
+}
+
+.twitter-iframe {
+    display: inline-block;
+    vertical-align: middle;
+    height: 28px;
+    width: 171px;
+}
+
+.googleplus-cont {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    margin-left: 100px;
+}
+
+.googleplus-iframe {
+    border-style: none;
+    visibility: visible;
+}
+
+.add-blocked-cont {
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    vertical-align: top;
+    margin-left: 5px;
+}

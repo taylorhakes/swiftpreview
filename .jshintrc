@@ -1,0 +1,27 @@
+{
+	"eqeqeq": true,
+	"es3": true,
+	"forin": true,
+	"freeze": true,
+	"indent": 4,
+	"latedef": true,
+	"newcap": true,
+	"noarg": true,
+	"noempty": true,
+	"undef": true,
+	"strict": true,
+	"trailing": true,
+	"maxparams": 3,
+	"maxdepth": 3,
+	"maxlen": 120,
+	"browser": true,  // true: Require triple equals (===) for comparison
+	"eqnull": true,  // true: Tolerate use of `== null`
+	"sub": true,
+	"predef": [         // Extra globals.
+		"define",
+		"chrome",
+		"itz",
+		"jQuery",
+		"webkitNotifications"
+	]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "SwiftPreview",
+    "version": "2.3.0",
+    "description": "Preview any link in a customizable tooltip. Great for browsing Twitter and news sites.",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "js/resources/jquery.js",
+                "js/itz.publish.js",
+                "js/itz.extend.js",
+                "js/SwiftPreview.js",
+                "js/cs.js"
+            ],
+            "all_frames": true,
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "notifications",
+        "tabs",
+        "*://*/*"
+    ],
+    "web_accessible_resources": [
+        "img/icon128_on.png",
+        "img/icon128_blocked.png"
+    ],
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "img/icon128_on.png",
+        "default_title": "SwiftPreview Toggle"
+    },
+    "options_page": "options.html",
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "icons": {
+        "48": "img/icon48_on.png",
+        "128": "img/icon128_on.png"
+    },
+    "minimum_chrome_version": "20.0.1130.1",
+    "manifest_version": 2
+}
